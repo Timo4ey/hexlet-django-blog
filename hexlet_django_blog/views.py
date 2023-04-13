@@ -14,7 +14,6 @@ class ViewIndex(TemplateView):
     
 
     def get(self, request, *args, **kwargs):
-        request.
         redirect_url = reverse('article', kwargs={'tag': 'python', 'id': 42})
         return HttpResponseRedirect(redirect_url)
 
